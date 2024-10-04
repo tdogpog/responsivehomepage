@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: aqua;
+  position: relative;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.descriptionBox {
+  background-color: white;
+  width: min(500px);
+  height: 100%;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+#aboutMe {
+  margin-bottom: 1.1rem;
+}
+
+#descriptionParagraph {
+  line-height: 1.4em;
+}
+
+.imgbox {
+  height: 100%;
+  width: auto;
+}
+
+.imgbox img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.mainContent {
+  margin-inline: auto;
+  margin-block: 2rem;
+  width: min(100% - 6.25rem, 90rem);
+}
