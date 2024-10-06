@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
 .headerContent {
   display: flex;
   align-items: center;
@@ -20,8 +25,9 @@
   background-color: white;
   width: min(500px);
   height: 100%;
-  padding: 3rem;
-  font-size: 1.2rem;
+  padding: 3.5rem;
+  font-size: 1.6rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 #aboutMe {
@@ -78,6 +84,7 @@
 .mainItems {
   background-color: black;
   color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .itemDescription {
@@ -128,4 +135,33 @@
 
 #footerHeader {
   font-size: 4rem;
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .headerContent {
+    display: block;
+  }
+
+  .headerContent .imgbox {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .descriptionBox {
+    margin-top: 4rem;
+    width: min(100vw - 2.5rem, 40rem);
+    margin-left: 9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .descriptionBox {
+    margin: 0;
+    width: 90%;
+  }
 }
